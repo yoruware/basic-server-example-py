@@ -6,7 +6,7 @@ port = 50001
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_TEAM)
 server_socket.bind((host,port))
-server_socket.listen()  #önce sus bi dinle gelen mesajı al diyor
+server_socket.listen()  #önce dinle ve gelen mesajı al
 
 conn, addr = server_socket.accept()
 print("connected from : "+str(addr))
